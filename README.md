@@ -21,19 +21,17 @@ The real hamster's wheel is the game engine: while it runs, every slam pays **×
 
 ---
 
-## 🇻🇳 Tóm tắt tiếng Việt
+## What is Squeek Slam?
 
-**Squeek Slam** là game arcade đập hamster 30 giây dành cho cộng đồng **SqueekChain** — và nó dùng **dữ liệu hamster thật**:
+Squeek Slam is a browser arcade game built for the **SqueekChain** community, where the chain's
+proof-of-work comes from a real hamster running in a wheel. Instead of a static scoreboard, the game
+reads the hamster's live telemetry — core status, RPM, distance, cumulative work units and block
+height — straight from the public SqueekChain API and lets it shape the round: when the real hamster
+is running, a **Chain Rush** kicks in and every slam is worth **×1.5**.
 
-- Đọc telemetry trực tiếp từ `api.squeekchain.com` (trạng thái core, RPM, quãng đường, work units, block height) và hiển thị realtime trên trang.
-- **Chain Rush**: khi hamster thật đang chạy, mọi cú đập được **×1,5 điểm** — cả người chơi đều thấy hiệu ứng và thông báo trong game.
-- **3 chế độ khó** (Chuẩn ×1 · Khó ×1,25 · Điên ×1,5) với **bảng xếp hạng riêng** cho từng chế độ.
-- **Giải đấu tuần** reset mỗi thứ Hai 00:00 UTC: đếm ngược, nhà vô địch tuần 👑, podium top 3.
-- Vòng chơi 4 giai đoạn (khởi động → tăng tốc → bùng nổ → 5 giây cuối ×2 điểm), combo tới ×5, hamster vàng, đồng hồ cộng giờ, bom trừ điểm.
-- Xếp hạng S/A/B/C/D, hiệu ứng hạt, âm thanh WebAudio, giao diện song ngữ **Việt / Anh**.
-- **Không ví, không NFT, không token** — điểm chỉ mang tính giải trí, không phải $SQK.
-
----
+One round lasts 30 seconds, escalates through four phases, and ends with a grade, a rank on the
+leaderboard and a shot at the weekly tournament crown. It runs on phones and desktops, in Vietnamese
+or English, with mouse, touch or keyboard — and it never asks for a wallet.
 
 ## ✨ Features
 
@@ -61,9 +59,21 @@ The game never invents numbers. Every telemetry value comes from the public Sque
 
 The backend proxies them at `GET /api/chain/status` with an **8 s cache** and a **6 s timeout**, and
 keeps serving the last known values if upstream is slow or offline, so the game never blocks on the network.
+The UI polls every 10 seconds and shows the live strip — status, RPM, kilometres and work units — inside the game card.
 
 **Chain Rush** switches on when the core reports `RUNNING` or the RPM is above zero: an amber badge lights up,
 a banner announces it, and every slam pays ×1.5 until the hamster stops.
+
+## 🎚 Difficulty modes
+
+| Mode | Spawn speed | Target lifetime | Concurrent targets | Bomb penalty | Points |
+| --- | --- | --- | --- | --- | --- |
+| Standard | 1.00× | 1.00× | up to 2 | −20 | ×1 |
+| Hard | 1.19× | 1.11× | up to 3 | −25 | ×1.25 |
+| Insane | 1.43× | 1.22× | 2–3 | −30 | ×1.5 |
+
+Grades are normalised by the mode multiplier — **S** ≥ 3000 · **A** ≥ 2000 · **B** ≥ 1200 · **C** ≥ 600 —
+so a Standard S and an Insane S both mean the same level of play.
 
 ## 🏗 Architecture
 
@@ -75,7 +85,7 @@ docs/       Banner artwork (editable SVG source + rendered PNG)
 ```
 
 **Frontend** — React 19, TypeScript, Vite 6, Tailwind CSS 4, TanStack Query for polling and caching,
-`lucide-react` icons, custom WebAudio synthesizer for sound effects (no audio assets).
+`lucide-react` icons, and a custom WebAudio synthesizer for sound effects (no audio assets to ship).
 
 **Backend** — Node.js + Express 4 on top of the Surf SDK: `@surf-ai/sdk/server` boots the HTTP server and
 `@surf-ai/sdk/db` exposes `dbQuery()` for Postgres access. The SDK provisions the database and syncs
