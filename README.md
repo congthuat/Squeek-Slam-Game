@@ -33,6 +33,9 @@ One round lasts 30 seconds, escalates through four phases, and ends with a grade
 leaderboard and a shot at the weekly tournament crown. It runs on phones and desktops, in Vietnamese
 or English, with mouse, touch or keyboard — and it never asks for a wallet.
 
+> 📮 Submitted to the **Squeekchain Genesis** program (built with the IMD swarm) — the step-by-step
+> submission flow and ready-to-paste texts live in [`docs/submission.md`](docs/submission.md).
+
 ## ✨ Features
 
 | | |
