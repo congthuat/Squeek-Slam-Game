@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="t d">
+  <title id="t">Squeek Slam</title>
+  <desc id="d">Squeek Slam - a 30-second hamster-slamming arcade game powered by live SqueekChain telemetry.</desc>
+  <defs>
+    <radialGradient id="glowAmber" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.34"/>
+      <stop offset="60%" stop-color="#f59e0b" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRose" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#f4bd6f"/>
+      <stop offset="55%" stop-color="#e3a455"/>
+      <stop offset="100%" stop-color="#c9853c"/>
+    </linearGradient>
+    <linearGradient id="ear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d99a54"/>
+      <stop offset="100%" stop-color="#a9702f"/>
+    </linearGradient>
+    <linearGradient id="mallet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="45%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="titleInk" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="55%" stop-color="#fcd34d"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="7" stdDeviation="11" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="640" fill="#09090b"/>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+  <circle cx="1020" cy="330" r="360" fill="url(#glowAmber)"/>
+  <circle cx="250" cy="520" r="300" fill="url(#glowRose)" opacity="0.6"/>
+  <rect x="14" y="14" width="1252" height="612" rx="26" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="1.5"/>
+  <g fill="#fbbf24"><circle cx="140" cy="118" r="3" opacity="0.5"/><circle cx="420" cy="470" r="2" opacity="0.35"/><circle cx="620" cy="176" r="2" opacity="0.3"/><circle cx="1200" cy="88" r="3" opacity="0.4"/><circle cx="760" cy="90" r="2" opacity="0.25"/></g>
+  <g fill="#f43f5e"><circle cx="240" cy="540" r="2.5" opacity="0.4"/><circle cx="700" cy="562" r="2" opacity="0.3"/></g>
+  <g fill="#ffffff"><circle cx="300" cy="78" r="2" opacity="0.3"/><circle cx="1240" cy="420" r="2" opacity="0.25"/><circle cx="520" cy="600" r="2" opacity="0.2"/></g>
+  <g fill="none" stroke="#fbbf24" stroke-linecap="round" stroke-dasharray="2 16">
+    <path d="M 868 48 A 190 190 0 0 1 1080 170" stroke-opacity="0.28" stroke-width="3.5"/>
+    <path d="M 862 13 A 225 225 0 0 1 1112 158" stroke-opacity="0.16" stroke-width="3"/>
+  </g>
+  <text x="80" y="250" font-family="'Inter','Segoe UI',Arial,sans-serif" font-size="88" font-weight="900" letter-spacing="2" fill="url(#titleInk)" filter="url(#drop)">SQUEEK SLAM</text>
+  <rect x="80" y="278" width="170" height="6" rx="3" fill="#fbbf24"/>
+  <text x="80" y="322" font-family="'Inter','Segoe UI',Arial,sans-serif" font-size="26" font-weight="800" letter-spacing="4" fill="#e4e4e7">30-SECOND HAMSTER-SLAMMING ARCADE</text>
+  <text x="80" y="354" font-family="'Inter','Segoe UI',Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="2.5" fill="#71717a">POWERED BY LIVE SQUEEKCHAIN TELEMETRY</text>
+    <rect x="80" y="386" width="126" height="36" rx="18" fill="rgba(24,24,27,0.85)" stroke="rgba(63,63,70,0.9)" stroke-width="1.5"/>
+    <text x="143" y="410" text-anchor="middle" font-family="'Inter','Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="1.2" fill="#a1a1aa">3 MODES</text>
+    <rect x="218" y="386" width="238" height="36" rx="18" fill="rgba(24,24,27,0.85)" stroke="rgba(63,63,70,0.9)" stroke-width="1.5"/>
+    <text x="337" y="410" text-anchor="middle" font-family="'Inter','Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="1.2" fill="#a1a1aa">WEEKLY TOURNAMENT</text>
+    <rect x="468" y="386" width="212" height="36" rx="18" fill="rgba(251,191,36,0.10)" stroke="rgba(251,191,36,0.55)" stroke-width="1.5"/>
+    <text x="574" y="410" text-anchor="middle" font-family="'Inter','Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="1.2" fill="#fbbf24">CHAIN RUSH ×1.5</text>
+    <rect x="692" y="386" width="148" height="36" rx="18" fill="rgba(24,24,27,0.85)" stroke="rgba(63,63,70,0.9)" stroke-width="1.5"/>
+    <text x="766" y="410" text-anchor="middle" font-family="'Inter','Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="1.2" fill="#a1a1aa">NO WALLET</text>
+  <circle cx="87" cy="453" r="5" fill="#fbbf24"/>
+  <text x="104" y="458" font-family="'JetBrains Mono',monospace" font-size="14" letter-spacing="1" fill="#a1a1aa">LIVE TELEMETRY · CORE IDLE · 0 RPM · 7.9 KM · 76,007 WORK UNITS</text>
+  <text x="80" y="596" font-family="'Inter','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" letter-spacing="3" fill="#52525b">SQUEEKCHAIN COMMUNITY GAME · GITHUB.COM/CONGTHUAT/SQUEEK-SLAM</text>
+  <ellipse cx="1015" cy="488" rx="122" ry="16" fill="#000000" opacity="0.32"/>
+  <circle cx="948" cy="252" r="36" fill="url(#ear)"/><circle cx="948" cy="252" r="19" fill="#f4c78e" opacity="0.75"/>
+  <circle cx="1082" cy="252" r="36" fill="url(#ear)"/><circle cx="1082" cy="252" r="19" fill="#f4c78e" opacity="0.75"/>
+  <circle cx="1015" cy="350" r="118" fill="url(#fur)"/>
+  <ellipse cx="1015" cy="384" rx="84" ry="74" fill="#f8ddb0" opacity="0.95"/>
+  <circle cx="978" cy="332" r="16" fill="#1c1917"/><circle cx="1052" cy="332" r="16" fill="#1c1917"/>
+  <circle cx="983" cy="326" r="5" fill="#ffffff"/><circle cx="1057" cy="326" r="5" fill="#ffffff"/>
+  <ellipse cx="960" cy="388" rx="16" ry="10" fill="#fb7185" opacity="0.35"/>
+  <ellipse cx="1070" cy="388" rx="16" ry="10" fill="#fb7185" opacity="0.35"/>
+  <ellipse cx="1015" cy="362" rx="10" ry="7" fill="#fb7185"/>
+  <path d="M 997 382 Q 1015 398 1033 382" fill="none" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+  <g stroke="#d6b483" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <path d="M 958 366 L 896 356"/><path d="M 956 376 L 894 376"/><path d="M 958 386 L 896 396"/>
+    <path d="M 1072 366 L 1134 356"/><path d="M 1074 376 L 1136 376"/><path d="M 1072 386 L 1134 396"/>
+  </g>
+  <ellipse cx="972" cy="448" rx="26" ry="15" fill="#f0c384" stroke="#c98a45" stroke-width="2"/>
+  <ellipse cx="1058" cy="448" rx="26" ry="15" fill="#f0c384" stroke="#c98a45" stroke-width="2"/>
+  <g transform="rotate(38 901 235)">
+    <rect x="891" y="110" width="20" height="250" rx="10" fill="url(#wood)"/>
+    <rect x="896" y="122" width="6" height="226" rx="3" fill="#d97706" opacity="0.8"/>
+    <rect x="836" y="58" width="130" height="88" rx="18" fill="url(#mallet)" stroke="#991b1b" stroke-width="4"/>
+    <rect x="852" y="72" width="24" height="58" rx="10" fill="#fecaca" opacity="0.5"/>
+  </g>
+  <g transform="translate(1000 196)">
+    <polygon points="0,-40 10,-12 36,-16 16,4 30,30 4,16 -14,36 -12,10 -38,4 -14,-8" fill="#fbbf24" opacity="0.95"/>
+    <circle cx="0" cy="0" r="11" fill="#ffffff" opacity="0.95"/>
+  </g>
+  <g stroke="#fde68a" stroke-width="4" stroke-linecap="round" opacity="0.9"><path d="M 940 138 v 24 M 928 150 h 24"/></g>
+  <g stroke="#fcd34d" stroke-width="3" stroke-linecap="round" opacity="0.8"><path d="M 1058 214 v 16 M 1050 222 h 16"/><path d="M 1006 118 v 14 M 999 125 h 14"/></g>
+  <text x="1104" y="106" font-family="'Inter','Segoe UI',Arial,sans-serif" font-size="40" font-weight="900" fill="#fbbf24" transform="rotate(-10 1104 106)">+50</text>
+  <rect x="852" y="468" width="336" height="50" rx="25" fill="#131316" stroke="#fbbf24" stroke-opacity="0.5" stroke-width="1.5"/>
+  <polygon points="900,478 884,500 895,500 889,518 908,492 897,492 903,478" fill="#fbbf24"/>
+  <text x="922" y="500" font-family="'Inter','Segoe UI',Arial,sans-serif" font-size="19" font-weight="800" letter-spacing="1.5" fill="#fbbf24">CHAIN RUSH ×1.5</text>
+</svg>
